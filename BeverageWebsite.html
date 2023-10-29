@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- External CSS libraries and styles -->
+    <!-- box Icon --> <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- remix Icon --> <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- minified CSS --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+<!-- External JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="Practice5-Cocktail.css">
+
+    <!-- JavaScript for initialization -->
+    <script> 
+        $(document).ready(function(){
+            // Tabs Init
+            $('.tabs').tabs();
+            // Sidenav Init
+            $('.sidenav').sidenav();
+            // Dropdown Init
+            $('.dropdown-trigger').dropdown();
+             // CAROUSEL
+             $('.carousel').carousel();
+             // Materialbox
+             $('.materialboxed').materialbox();
+             // SLIDER
+             $('.slider').slider();
+            $('.fixed-action-btn').floatingActionButton({
+       toolbarEnabled: true,  // Enables the toolbar
+    
+    });
+                
+
+     })
+
+    </script> 
+    
+  
+    <title>Jeny's Beverage Recommendations</title>
+   
+
+
+</head>
+<body>
+         <header>
+                    <div class="navbar-fixed"> <!--Fixed top navbar-->
+                        <nav>
+                            <div class="nav-wrapper" style="background-color: black;">  
+                                <a href="index.html" id="design" style="font-weight: 700; font-size:24px;color:gold;">Design by JT</a>
+                        
+                            <!-- Navigation Links (Right) -->
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="#home" style="color: gold;">Home</a></li>
+                                <li><a href="#about" style="color: gold;">About</a></li>
+                                <li><a href="#cocktails" style="color: gold;">Cocktails</a></li>
+                                <li><a href="#wines" style="color: gold;">Wines</a></li>
+                                <li><a href="#Shop" style="color: gold;">Shop</a></li>
+                                <li><a href="#newsletter" style="color: gold;">Newsletter</a></li>
+                                <li><a href="index.html" style="color:gold">Visit my Portfolio</a></li>
+                            </ul>
+                            <!-- Mobile Menu Trigger -->
+                    <a href="#" data-target="slide-out" class="sidenav-trigger left"><i class="ri-menu-line" style="color: gold;"></i></a> 
+                        </div>
+                    </div>
+                </nav>
+         </header>
+    
+
+                    <!-- Slide-out Side Nav -->
+                    <ul id="slide-out" class="sidenav">
+                        <li>
+                            <div class="user-view">
+                                <!-- Side Nav Links -->
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#cocktails">Cocktails</a></li>
+                                <li><a href="#wines">Wines</a></li>
+                                <li><a href="#shop">Gallery/Shop</a></li>
+                                <li><a href="#newsletter">Newsletter</a></li>
+                                <li><a href="index.html">Visit my Portfolio</a></li>
+                            </div>
+                        </li>
+                    </ul>  <!-- End of Side Nav -->
+        <!-- Floating Action Button -->
+                    <div class="fixed-action-btn toolbar" id="fab-btn">
+                    <a class="btn-floating btn-large pulse cyan click-to-toggle my-fab">
+                    <i class="ri-menu-search-line" style="color: black;"></i>
+                    </a>
+                    <ul id="fab-content">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#cocktails">Cocktails</a></li>
+                        <li><a href="#wines">Wines</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                            
+                    </ul>
+                    </div>  <!-- END OF NAVBAR AND Sidenav-->
+
+
+
+
+
+
+
+
+
+    <!-- Main Section -->
+    <section id="home" class="main">
+        <div class="container" id="container-home">
+            <h1 class="headline" id="welcome">Welcome to Jeny's Beverage Recommendations!</h1>
+            <h2 class="headline">Discover the Perfect Drink</h2>
+            <h5 class="headline">Explore Our Expert Recommendations for Every Occasion</h5>
+            <br>
+            <h5 id="hometext">Jeny's Beverage Recommendation is your passport to a world of extraordinary drinks.
+                <br> We're your dedicated guide to crafting memorable moments with expertly curated recommendations. 
+                <br> From cocktails that dazzle to wines that inspire, explore a spectrum of flavors for every occasion. Uncover your perfect drink with us today!</h5>
+            <br>
+            <a href="#recommendations" class="cta-button"><span>View Recommendations</span></a>
+        
+        </div>
+       <br><br><br>
+    </section>
+    
+    <!-- About Section -->
+    
+    <section id="about" class="about">
+            <h2 class="headline">About this website</h2>
+            <br><br>
+            <div class="container" id="about-content">
+                    <div class="row">
+                        <div class="col s6">
+                            <h5 class="headline">Welcome to <span>Jeny's</span> Beverage Recommendations!</h5>
+                            <br>
+                            <p>Your friendly companion on a delightful journey of beverage discovery.</p>
+                            <br><br>
+                            <p>With over a decade of experience in the world of hospitality, including her role as a Restaurant Supervisor and Team Lead in a renowned restaurant at Atlantis, The Palm, Dubai, Jeny brings a wealth of knowledge and a warm, inviting spirit to your glass.</p> 
+                            <br>
+                            <p>Jeny's mission is simple: to be your trusted guide in exploring the world of beverages. Whether you're seeking the perfect cocktail for a celebration or a wine recommendation for a quiet evening, we're here to help. Jeny's expertise and enthusiasm for mixology are at your service.</p>
+                            
+                        </div> 
+                        
+                        <div class="col s6">
+                                <div class="img-container">
+                                    <div class="wrapper">
+                                        <img src="cocktail web content/jen1.jpg">
+                                        <img src="cocktail web content/jen2.jpg">
+                                        <img src="cocktail web content/jen3.jpg">
+                                        <img src="cocktail web content/jen4.jpg">
+                                        <img src="cocktail web content/jen5.jpg">
+                                    </div>
+                            </div>
+                        </div>
+                 </div>  <!-- end of row -->
+           </div>
+         
+       
+    </section>
+    
+    <!-- Recommendations Section -->
+    <section class="recommendation" id="recommendations">
+        <br>
+        <h2 class="headline">Recommendations</h2>
+        <br>
+        <div class="container">
+            <video autoplay loop muted playsinline class="back-video" frameborder="0" allowfullscreen>
+                <source src="cocktail web content/pouring wine.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <p>Join us on an enchanting journey through the world of beverages with your friendly companion, Jeny. With over a decade of experience and a warm, inviting spirit, she's here to make every sip a memorable one.</p>
+                <br>
+                <p>Discover the perfect cocktail for your special celebration or a wine that elevates your regular dinner to a delightful experience. Jeny's expertise and passion for mixology are at your service. Explore our curated recommendations and let your taste buds embark on a captivating adventure. Cheers to extraordinary flavors and unforgettable memories!</p>
+                <br><br>
+                <div class="buttons-container">
+                    <a href="#cocktails" class="cta-button" id="button2"><span>Cocktail  Recommendations</span></a>
+                    <a href="#wines" class="cta-button" id="button3"><span>Wine Recommendations</span></a>
+                </div>
+            </div>
+            <br><br>
+            
+        </div>
+     
+    </section>
+    <br><br><br><br>
+
+        <!-- Cocktail content here -->
+        <section id="cocktails" class="cocktails">
+            <h2>Cocktails Recommendations</h2>
+            <br>
+            <div class="container">
+                <div class="box-container">
+                <div class="box" id="winebox"> <!-- Start here box -->
+                    <div class="card card1">
+                    <h4>MOJITO</h4>
+                    <img src="cocktail web content/Spirits/mojito-removebg-preview.png" alt="Mojito">
+                    <a href="" class="btn" id="drink-btn">Hover card</a>
+                </div>
+                    <div class="card card2">
+                        <h4>MOJITO </h4>
+                        <ul >
+                            <li>2 oz (60 ml) white rum</li>
+                            <li>1 oz (30 ml) fresh lime juice</li>
+                            <li>2 teaspoons sugar</li>
+                            <li>6-8 fresh mint leaves</li>
+                            <li>Soda water (club soda)</li>
+                            <li>Ice</li>
+                        </ul>
+                        <br>
+                        <iframe class="responsive-video" src="https://www.youtube.com/embed/SZYT6lf2V4A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div> <!-- end of box -->
+                
+
+                <div class="box" id="winebox">
+                    <div class="card card1">
+                    <h4 id="daiquiri">DAIQUIRI</h4>
+                    <img src="cocktail web content/Spirits/149-Strawberry-daiquiri-e1573214364331-removebg-preview.png" alt="Daiquiri">
+                    <a href="" class="btn">Hover card</a>
+                </div>
+                <div class="card card2">
+                    <h4> FROZEN STRAWBERRY DAIQUIRI </h4>
+                    <ul >
+                        <li>2 oz (60 ml) white rum</li>
+                        <li>1 oz (30 ml) fresh lime juice</li>
+                        <li>3/4 oz (22 ml) simple syrup (or more to taste)</li>
+                        <li>1 cup strawberries (fresh or frozen)</li>
+                        <li>Ice</li>
+                    </ul>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=H2QD90xrJRU" target="_blank" class="btn">Video Tutorial</a>
+                </div>
+            </div>
+
+            <div class="box" id="winebox">
+                <div class="card card1">
+                <h4>CUBA LIBRE</h4>
+                <img src="cocktail web content/Spirits/Cuba-Libre.png" alt="Cuba Libre">
+                <a href="" class="btn">Hover card</a>
+            </div>
+            <div class="card card2">
+                <h4> CUBA LIBRE </h4>
+                <ul >
+                    <li>2 oz (60 ml) white rum</li>
+                    <li>4-6 oz (120-180 ml) cola</li>
+                    <li>Fresh lime juice (typically half a lime)</li>
+                    <li>Ice</li>
+                    <li>Lime wedges for garnish</li>
+                </ul>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+        </div>
+
+        <div class="box" id="winebox">
+            <div class="card card1">
+            <h4>MARGARITA</h4>
+            <img src="cocktail web content/Spirits/MargaritaN.png" alt="Margarita">
+            <a href="" class="btn">Hover card</a>
+        </div>
+        <div class="card card2">
+            <h4> Frozen Lime Margarita </h4>
+            <ul >
+                <li>2 oz (60 ml) tequila</li>
+                <li>1 oz (30 ml) triple sec (orange liqueur)</li>
+                <li>1 oz (30 ml) fresh lime juice</li>
+                <li>1 oz (30 ml) simple syrup</li>
+                <li>Ice</li>
+                <li>Salt (for rimming the glass)</li>
+                <li>Lime wedges for garnish</li>
+            </ul>
+            <br>
+            <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+        </div>
+    </div>
+
+    <div class="box" id="winebox">
+        <div class="card card1">
+        <h4>MAI TAI</h4>
+        <img src="cocktail web content/Spirits/MAI_TAI N.png" alt="Mai Tai">
+        <a href="" class="btn">Hover card</a>
+    </div>
+    <div class="card card2">
+        <h4> MAI TAI </h4>
+        <ul>
+            <li>2 oz (60 ml) light rum</li>
+            <li>1 oz (30 ml) dark rum</li>
+            <li>1 oz (30 ml) lime juice</li>
+            <li>1/2 oz (15 ml) orange liqueur (e.g., triple sec)</li>
+            <li>1/2 oz (15 ml) orgeat syrup (almond syrup)</li>
+            <li>1/2 oz (15 ml) simple syrup</li>
+            <li>Ice</li>
+            <li>Pineapple or cherry for garnish</li>
+        </ul>
+        <br>
+        <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+    </div>
+    </div>
+
+    <div class="box" id="winebox">
+    <div class="card card1">
+    <h4>MANHATTAN</h4>
+    <img src="cocktail web content/Spirits/manhatttaN.png" alt="Manhattan">
+    <a href="" class="btn">Hover card</a>
+</div>
+<div class="card card2">
+    <h4> MANHATTAN </h4>
+    <ul>
+        <li>2 oz (60 ml) rye whiskey or bourbon</li>
+        <li>1 oz (30 ml) sweet vermouth</li>
+        <li>2 dashes Angostura bitters</li>
+        <li>Ice</li>
+        <li>Maraschino cherry for garnish (optional)</li>
+        <li>Orange twist for garnish (optional)</li>
+    </ul>
+    <br>
+    <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+</div>
+</div>
+            </div>
+            </div> <!-- end of cocktail container -->
+            <hr>
+        </section>
+        <br><br><br><br>
+  
+    <!-- Wine content here -->
+    <section id="wines" class="WINE">
+        <h2>Wine Recommendations</h2>
+        <br>
+        <div class="container">
+            <div class="box-container">
+                <!-- Wine bottles grid content here -->
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>CAB SAUV</h4>
+                <img src="cocktail web content/Spirits/cabsauv.png" alt="redwine">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> CABERNET SAUVIGNION </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div> <!-- end of box -->
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>MERLOT</h4>
+                <img src="cocktail web content/Spirits/merlot.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> MERLOT</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>PINOT NOIR</h4>
+                <img src="cocktail web content/Spirits/pnoir.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+                                                                  
+            <div class="card card2">
+                <h4> PINOT NOIR</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+            <div class="box" id="winebox2" id="sblanc">
+                <div class="card card1" id="sblanc1">
+                <h4>SAUV BLANC</h4>
+                <img src="cocktail web content/Spirits/sablancN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2" id="sblanc2">
+                <h4> SAUVIGNON BLANC</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>CHARDONNAY</h4>
+                <img src="cocktail web content/Spirits/chardN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> CHARDONNAY</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>PINOT GRIGIO</h4>
+                <img src="cocktail web content/Spirits/pgrigioN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> PINOT GRIGIO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>Moet & Chandon Rose</h4>
+                <img src="cocktail web content/Spirits/moetN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> Moet & Chandon Rose </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>Veuve Clicquot Rose Champagne</h4>
+                <img src="cocktail web content/Spirits/vclicqN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> Veuve Clicquot Rose Champagne </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+
+            <div class="box" id="winebox2">
+                <div class="card card1">
+                <h4>Pink Moscato Rose Wine</h4>
+                <img src="cocktail web content/Spirits/pmoscatoN.png" alt="Manhattan">
+                <a href="" class="btn">Hover card </a>
+            </div>
+            <div class="card card2">
+                <h4> Pink Moscato Rose Wine </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vitae rem consequuntur hic laboriosam id!</p>
+                <br>
+                <a href="https://www.youtube.com/shorts/bPKMK5ZVMu4" target="_blank" class="btn">Video Tutorial</a>
+            </div>
+            </div>
+
+        </div>
+        </div> <!-- end of Wine container -->
+        <hr>
+    </section>
+ <!-- Gallery and Shop Section -->
+ <section id="shop" class="shop">
+    <div class="container">
+    <h2>Ready to make your first cocktail or purchase one of our recommended wine?</h2>
+    <h5>Click the image to shop</h5>
+ 
+                 
+                 <!-- COCKTAIL CAROUSEL -->
+<div class="container">
+    <div class="row">
+        <div class="carousel cocktail-carousel">
+            <a class="carousel-item" href="https://shopee.ph/Bacardi-White-Rum-750-mL-i.149174871.16425187029?sp_atk=aacc1c01-ba13-45f2-a2a0-df4306a167bd&xptdk=aacc1c01-ba13-45f2-a2a0-df4306a167bd" target="_blank"><img src="https://www.saq.com/media/catalog/product/4/5/45898-1_1580601321.png"  class="materialboxed" width="600px"></a> 
+            <a class="carousel-item" href="https://shopee.ph/Bacardi-Black-Rum-750ml-i.286100936.18774078867?sp_atk=e4ef86c7-b167-4a34-90b6-95844d971f8a&xptdk=e4ef86c7-b167-4a34-90b6-95844d971f8a" target="_blank"><img src="https://www.saq.com/media/catalog/product/1/0/10831027-1_1580608522.png?" alt="bacardi black" class="materialboxed" width="600px"></a>
+            <a class="carousel-item" href="https://shopee.ph/Patron-Silver-Tequila-750mL-i.149174871.2775181194?sp_atk=abbf535f-a07c-471d-b917-9ea9b1fb57c7&xptdk=abbf535f-a07c-471d-b917-9ea9b1fb57c7" target="_blank"><img src="https://www.saq.com/media/catalog/product/1/0/10689981-1_1580598918.png" alt="patron" class="materialboxed" width="600px"></a>
+            <a class="carousel-item" href="https://shopee.ph/Cointreau-Orange-Liqueur-700ml-i.286100936.16601493507?sp_atk=7d4a86b8-4fcb-428f-b60e-e348ab55aeb4&xptdk=7d4a86b8-4fcb-428f-b60e-e348ab55aeb4" target="_blank"><img src="cocktail web content/Bottles/coin.jpg"height="300"alt="cointreau" class="materialboxed" width="600px"></a>     
+            <a class="carousel-item" href="https://shopee.ph/Crown-Royal-Canadian-Whisky-i.121809721.1905028843?sp_atk=8a75b851-de08-489f-88f9-d8ecaf1c40a2&xptdk=8a75b851-de08-489f-88f9-d8ecaf1c40a2" target="_blank"><img src="cocktail web content/Bottles/crown-removebg-preview.png" alt="crown" class="materialboxed" width="600px"></a>
+            <a class="carousel-item" href="https://shopee.ph/MARTINI-ROSSI-ROSSO-SWEET-VERMOUTH-1L-i.130693373.10101138355?sp_atk=66348261-ec23-4e8f-9812-92cb075930d8&xptdk=66348261-ec23-4e8f-9812-92cb075930d8" target="_blank"><img src="cocktail web content/Bottles/rosso.png" alt="rosso" class="materialboxed" width="600px"></a>
+            <br><br><br><br><br>
+           
+        </div>
+    </div>
+</div> <!-- END OF COCKTAIL CAROUSEL -->
+</section>
+        
+<br><br><br><br><br>
+
+
+
+
+
+
+<hr>
+                <!-- WINE  SLIDER -->
+  <div class="container">          
+        <nav class="black nav-extended">
+            <br>
+            <div class="nav-content">
+                <h3>Wine selection</h3>
+                  <!--  WINE  miini SLIDER -->
+  <div class="container">
+    <div class="col s6">
+        <div class="img-container">
+            <div class="wrapper">
+                <img src="cocktail web content/Spirits/cabsauv.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/merlot.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/pnoir.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/chardN.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/pgrigioN.png"width="80%" height="150px">
+                <img src="cocktail web content/Spirits/sablancN.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/moetN.png" width="80%" height="150px">
+                <img src="cocktail web content/Spirits/pmoscatoN.png"width="80%" height="150px">
+                <img src="cocktail web content/Spirits/vclicqN.png"width="80%" height="150px">
+            </div>
+    </div>
+</div>
+</div> <!-- END of WINE  SLIDER -->
+
+            </div>
+            <div class="nav-content"> <!-- Extended Navbar -->
+                <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#redwine1" style="color: gold;">Red wine 1</a></li>
+                <li class="tab"><a class="active" href="#redwine2" style="color: gold;">Red wine 2</a></li>
+                <li class="tab"><a href="#redwine3" style="color: gold;">Red wine 3</a></li>
+                <li class="tab"><a href="#whitewine1" style="color: gold;">white wine 1</a></li>
+                <li class="tab"><a href="#whitewine2" style="color: gold;">white wine 2</a></li>
+                <li class="tab"><a href="#whitewine3" style="color: gold;">white wine 3</a></li>
+                </ul>
+            </div>
+            </nav>
+
+         <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card card1" id="redwine1">
+                            <a href="https://shopee.ph/Robert-Mondavi-Private-Selection-Bourbon-Barrel-Aged-Cabernet-Sauvignon-75cl-i.426244685.20089133691?sp_atk=a9dbb518-06b8-416c-acc9-dfd5700a9d76&xptdk=a9dbb518-06b8-416c-acc9-dfd5700a9d76" target="_blank">
+                            <img class="wine-image" src="cocktail web content/Spirits/cabsauv.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+         </div>
+         <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card card1" id="redwine2">
+                        <a href="https://shopee.ph/Robert-Mondavi-Woodbridge-Merlot-750ml-i.286100936.23876771052?sp_atk=ebb6026d-9986-4ecf-b316-397b4ebe97f4&xptdk=ebb6026d-9986-4ecf-b316-397b4ebe97f4h" target="_blank" >
+                        <img class="wine-image" src="cocktail web content/Spirits/merlot.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+                       
+                            
+                    </div>
+                </div>
+            </div>
+     </div>
+     <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card card1" id="redwine3">
+                    <a href="https://shopee.ph/Beringer-Founders'-Estate-Pinot-Noir-750ML-i.308362141.4955644030?sp_atk=46eca052-7492-4ee6-8c59-73d7425357ed&xptdk=46eca052-7492-4ee6-8c59-73d7425357ed" target="_blank">
+                        <img class="wine-image" src="cocktail web content/Spirits/pnoir.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card card1" id="whitewine1">
+                        <a href="https://shopee.ph/Beringer-Founders'-Estate-Chardonnay-750ML-i.308362141.5855651570?sp_atk=e22a1b26-14d2-4f5f-b324-869cc2959f1f&xptdk=e22a1b26-14d2-4f5f-b324-869cc2959f1f" target="_blank">
+                            <img class="wine-image" src="cocktail web content/Spirits/chardN.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+                    </div>
+                </div>
+            </div>
+     </div>
+     <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card card1" id="whitewine2">
+                    <a href="https://shopee.ph/Beringer-Founders'-Estate-Chardonnay-750ML-i.308362141.5855651570?sp_atk=e22a1b26-14d2-4f5f-b324-869cc2959f1f&xptdk=e22a1b26-14d2-4f5f-b324-869cc2959f1f" target="_blank">
+                        <img class="wine-image" src="cocktail web content/Spirits/pgrigioN.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+                </div>
+            </div>
+        </div>
+ </div>
+ <div class="row">
+    <div class="col s12">
+        <div class="card">
+            <div class="card card1" id="whitewine3">
+                <a href="https://shopee.ph/Robert-Mondavi-Woodbridge-Chardonnay-750ml-i.286100936.18182955821?sp_atk=855eaae8-5be0-49bf-85db-dddde3cc167b&xptdk=855eaae8-5be0-49bf-85db-dddde3cc167b" target="_blank">
+                    <img class="wine-image" src="cocktail web content/Spirits/sablancN.png" style="display: block; margin: 0 auto;"  width="100%" height="350px"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+<hr> <!-- Extended Navbar -->
+
+
+
+
+
+
+    <!-- Newsletter Signup Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>WANT TO KNOW MORE?</h2>
+            <div class="container">
+                <div class="body_txt">
+                    <h3 id="newsletterp">Subscribe to our <br> newsletter!</h3>
+                    <div class="card card-panel">
+                        <h5>We'll send you the best of our blog just once a month. We promise.</h5>
+                        <div class="input">
+                            <input type="email" name="" id="" placeholder="Enter e-mail"><br>
+                            <a href="" class="cta-button"><span>Subscribe</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+<!-- Footer Section -->
+<footer class=" black page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s6 m3">
+            <img src =" https://themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" class="responsive-img">
+            <p>  Website made with Materialize CSS and Telecall CWD training. Batch 09 2023.</p> 
+        </div>
+
+        <div class="col s6 m3">
+            <h6> Resources</h6>
+            <a href="https://materializecss.com/">materializecss </a>
+            <br>
+            <a href="https://www.w3schools.com/">w3schools.com </a>
+            <br>
+            <a href="https://www.freecodecamp.org/">freecodecamp</a>
+            <br>
+            </div>
+            
+            <div class="col s4 m3">
+            <h6> Connect</h6>
+            <ul class="social-media-list">
+                <ul>
+                            <li><a href="https://github.com/jenytoquero" target="_blank"><i class="ri-github-fill" style="font-weight: 700; font-size:24px; color: blue;"></i></a> <span>Github</span></i></li>
+                            <li<a href="https://codepen.io/Jeny-Toquero/"target="_blank"><i class="ri-codepen-fill" style="font-weight: 700; font-size:24px;color: blue;"></i></a> <span>Codepen</span></i></li>
+                            <li><a href="https://www.linkedin.com/in/jeny-toquero-jt2023/"target="_blank"><i class="ri-linkedin-fill" style="font-weight: 700; font-size:24px;color: blue;"></i></a><span>LinkedIn</span></i></li>
+                            <li><a href="https://www.facebook.com/JT.VAoperations" target="_blank"><i class="ri-facebook-box-fill" style="font-weight: 700; font-size:24px; color: blue;" title="facebook.com/JT.VAoperations;"></i></a> <span>Facebook</span> </i></li>
+                            <li><a href="mailto:jt.vaoperations@gmail.com"><i class="ri-mail-fill" style="font-weight: 700; font-size:24px;color: blue;"title="Email to: jt.vaoperations@gmail.com"></i></a> <span>Gmail</span></i></li>
+            </ul>
+            </div>
+            
+            <div class="col s4 m3">
+            <h6> Other Informations</h6>
+            <p>Made by Jeny Toquero </p>
+            <p>CWD Batch 09. Sep-Nov 2023</p>
+            <p>Trainer: Bobby Ferrer</p>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=100073183044032https://www.w3schools.com/">Telecall - Laguna</a>
+            <br>
+            <a href="https://www.tesda.gov.ph/"> TESDA</a>
+            <br>
+            </div>
+
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © Made by Jeny Toquero
+    
+
+      
+      </div>
+    </div>
+  </footer>
+
+    <div style="#" height="800px"></div>
+    
+</body>
+</html>

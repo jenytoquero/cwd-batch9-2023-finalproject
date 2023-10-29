@@ -1,0 +1,15 @@
+
+h1 {
+  color: rgb(250, 136, 136);
+  text-align: center;
+  font-weight: 700;
+}
+
+
+h3 {
+  color: rgb(246, 100, 100);
+}
+.scrollspy-container {
+   position: fixed;
+   font-size: 20px;
+}

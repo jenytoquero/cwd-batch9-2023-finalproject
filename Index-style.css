@@ -1,0 +1,399 @@
+/* Universal Reset Styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    object-fit: scale-down;
+    color:gold
+  }
+
+  /* Body Styles */
+body {
+    display: grid;
+    placed-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 1, 7);
+    color: gold;
+    
+}
+
+
+.card {
+    background-color: transparent; /* Set the background to transparent kc im using card panel*/
+    border: none; 
+    box-shadow: none; 
+    padding: 0; 
+}
+
+
+#navbar a,
+#slide-out a {
+    font-weight: 700;
+    margin: left 20px;
+    text-align: center;
+    color:gold; /* Set the default font color to cyan */
+    transition: color 0.3s, background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
+#slide-out {
+    background-color: black;
+}
+/* Add hover styles for side nav links */
+#navbar a:hover,
+#slide-out a:hover {
+  color: cyan;
+  background-color: black;
+}
+
+
+/* Main section / Home Page */
+
+/* Scroller styling */
+.scroller {
+    height: 5em;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.3rem;
+      color: cyan;
+  }
+  .scroller>span {
+    position: absolute;
+    top: 100%;
+    animation: slide 7s infinite;
+    font-weight: bold;
+  font-size: 50px;
+  text-shadow: 0 0 10px rgb(36, 246, 99);
+    
+  }
+  @keyframes slide {
+    0% {
+      top: -0.2em;
+    }
+    25% {
+      top: -1.5em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+  }
+
+  
+/* Styling for Send a message and Portfolio Buttons */
+#btn1 {
+  position: relative;
+  background-color: rgb(135, 218, 246);
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  color: black;
+  border-radius: 25px;
+  margin-right: 40px;
+     
+    
+  }
+  
+  #btn2 {
+  background-color: rgb(68, 213, 194);
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  color: black;
+  border-radius: 25px;
+  margin-right: 50px;
+
+  
+  }
+
+  #btn5 {
+    position: relative;
+    background-color: rgb(135, 218, 246);
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    color: black;
+    border-radius: 25px;
+       
+      
+    }
+  #btn1:hover,
+#btn2:hover {
+    background-color: gold;
+    color: teal;
+}
+
+.icon {
+  position: relative;
+  text-align: justify;
+}
+
+  /* Change Color for SocMed Icons */
+  .icon i {
+    margin: 5px;
+    font-size: 34px;
+    color: gold;
+    
+  }
+  
+  /* Hover Effect on SocMed Icons When Chosen */
+  .icon i:hover {
+    color: cyan;
+  }
+  
+  /* Glowing Effect on HTML and CSS Icons */
+  @keyframes glowing {
+    0% {
+        background-color: transparent;
+        box-shadow: 0 0 10px #eaf202e9;
+    }
+    50% {
+        background-color: #ff2600;
+        box-shadow: 0 0 20px #ff2600;
+    }
+    100% {
+        background-color: transparent;
+        box-shadow: 0 0 10px #2fff00;
+    }
+  }
+  
+   #html-icon i,
+  #css-icon i {
+    font-size: 34px;
+    color: gold;
+    animation: glowing 2s infinite;
+    display: inline-block;
+    border-radius: 15px;
+  }
+  #html-icon i:hover {
+    color:orangered;
+  }
+  #css-icon i:hover {
+    color: blue;
+  }
+
+  /* Home - Image -magic card effect */
+  
+  @keyframes spin {
+    0% {
+        background-color: transparent;
+        opacity: 50%;
+        box-shadow: 0 0 10px gold;
+    }
+    50% {
+        background-color: color rgba(88, 199, 250, 0%);
+        box-shadow: 0 0 50px;
+    }
+    100% {
+        background-color: transparent;
+        opacity: 80%;
+        box-shadow: 0 0 10px #ff2600;
+    }
+  }
+  #magic-card {
+    font-size: 34px;
+    animation: spin 5s infinite;
+    display: inline-block;
+    
+  }
+
+  /*  FAB button Hover*/
+
+
+#fab-content a:hover {
+  background-color: black;
+  color: gold;
+    }
+ 
+
+/* STYLING FOR MY SERVICES */
+/* White Border with radius */
+.container-image .service-card {
+    position: relative;
+    min-width: 300px; /* lapad ng white background border ng image */
+    height: 285px; /* height ng white background border ng image */
+    background-color: #fff;
+    margin: 30px 15px;
+    padding: 65px 15px 15px 10px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 0px 50px 0px 50px; /* Square tip on top left, 50px curve on top right and bottom left, no radius on bottom right */
+}
+
+.container-image .service-card:hover {
+    height: 450px; /* nag-eextend pababa pag nag hover */
+}
+
+/* This controls the Image Size */
+.container-image .service-card .card-image {
+    position: relative;
+    top: -20%; /* Nagpapa-angat sa image */
+    height: 220px; /* Original size 260px */
+    left: 5px;
+    z-index: 1;
+}
+
+.container-image .service-card .card-image img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+
+.container-image .service-card .content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+    visibility: hidden; /* visible kita ung text */
+    opacity: 0;   /* value of 1 kita ung */
+    transition: 0.3s ease-in-out;
+}
+
+.content {
+    color: teal;
+}
+
+.container-image .service-card:hover .content {
+    margin-top: 70px; /* Nagbaba ng content-text once nag hover. */
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+/* contact form styling sheet */
+
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+.contactInfo  i {
+    font-size: 34px;
+    color: gold;
+    display: inline-block;
+  }
+.iconC i {
+  font-size: 34px;
+    color: gold;
+    display: inline-block;
+}
+.form-control{
+  background-color: #555;
+  color: gold;
+  font-weight: bold;
+  
+}
+
+  /* SEND BUTTON */
+  .send  {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        border-radius: 60px;
+   
+        }
+        .custom-button {
+            position: relative;
+            padding: 15px 0;
+            text-align: center;
+            border: 2px solid #3eff37;
+            background: transparent;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: gold;
+            overflow: hidden;
+        }
+        
+        .custom-button .button-overlay {
+            background: teal;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: width 0.5s;
+           
+        }
+        
+        .custom-button:hover .button-overlay {
+            width: 100%;
+                     
+        }
+
+        .custom-button:hover .send-text {
+            color: white ; /* Change the text color to white on hover */
+            font-style: italic; /* Make the text italic on hover */
+    letter-spacing: 4px; /* Add letter spacing on hover */
+        }
+        
+  
+/* Social Media Icons on COntact ME page */
+
+.social-media-list i{
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 30px;
+}
+.social-media-list i:hover {
+  background-color:cyan; 
+  color: black;
+  
+}
+
+
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons-container {
+    justify-content: relative;
+    text-align: center;
+    flex-direction: column;
+    }
+  .info {
+    font: 10px;
+    text-align: center;
+  }
+  .scroller h3{
+    font-size: 35px;
+  }
+}
+

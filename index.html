@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JT Portfolio</title>
+</head>
+<body>
+    <!-- scripts -->
+    <!-- remix Icon --> <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+     <!-- box Icon --> <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <!-- minified CSS --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+     <link rel="stylesheet" href="Index-style.css">
+
+    
+    <!-- External JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    
+
+    <!-- JavaScript for initialization -->
+    <script> 
+        $(document).ready(function(){
+            // Tabs Init
+            $('.tabs').tabs();
+            // Sidenav Init
+            $('.sidenav').sidenav();
+            // Dropdown Init
+            $('.dropdown-trigger').dropdown();
+             // Materialbox
+             $('.materialboxed').materialbox();
+             // Parallax
+             $('.parallax').parallax();
+            //FAB
+            $('.fixed-action-btn').floatingActionButton({
+    hoverEnabled: false,  // Disables hover effect
+    toolbarEnabled: true,  // Enables the toolbar
+    
+    });
+                
+
+     })
+
+    </script> 
+
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" style="background-color: teal" id="navbar">
+        <a href="" id="design" style="font-weight: 700; font-size: 34px; color: gold;">Design by JT</a>
+        <!-- Navigation Links (Right) -->
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="BeverageWebsite.html">Sample Website</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="https://mailchi.mp/098d33c3d8d9/sign-up-now-and-get-exclusive-perks" target="_blank">JOIN OUR LIST</a></li>
+        </ul>
+  
+        <!-- Mobile Menu Trigger -->
+        <a href="#" data-target="slide-out" class="sidenav-trigger left"><i class="ri-menu-line"></i></a>
+      </div>
+    </nav>
+  </div>
+  
+<!-- Slide-out Side Nav -->
+<ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <!-- Side Nav Links -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="BeverageWebsite.html">Sample Website</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="https://mailchi.mp/098d33c3d8d9/sign-up-now-and-get-exclusive-perks" target="_blank">Exclusive Perks</a></li>
+      </div>
+    </li>
+  </ul> <!-- End of Side Nav -->
+  
+  <!-- Floating Action Button -->
+  <div class="fixed-action-btn toolbar" id="fab-btn">
+    <a class="btn-floating btn-large pulse cyan click-to-toggle my-fab">
+      <i class="ri-menu-search-line"></i>
+    </a>
+    <ul id="fab-content">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="BeverageWebsite.html">Sample Website</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="https://mailchi.mp/098d33c3d8d9/sign-up-now-and-get-exclusive-perks" target="_blank">Exclusive Perks</a></li>
+    </ul>
+  </div> <!-- END OF NAVBAR AND Sidenav -->
+  
+
+  <div class="container"> <!-- container - margin -->
+    <main>
+      <div class="" id="container-home"> <!-- To contain my 2 card panel (left is info about myself) & (Right is my Image) -->
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="info">
+                <h1 style="font-weight: 700; color: cyan; center-align">Jeny Toquero</h1>
+                <div class="scroller center-align">
+                  <span>
+                    <h3 style="font-weight: 400; color: gold;">Web Designer</h3>
+                    <h3 style="font-weight: 400; color: gold;">Web Developer</h3>
+                    <h3 style="font-weight: 400; color: gold;">Digital Marketer</h3>
+                  </span>
+                </div>
+                <br>
+                <!-- Contact Me and View Portfolio Button -->
+                <div class="buttons-container center-align">
+                  <a href="#contact" target="_blank" class="btn btn--contact" id="btn1">Send a Message</a>
+                  <a href="https://mailchi.mp/edd1445e1497/7j0cd3ng9j" target="_blank" class="btn btn--contact" id="btn2">Marketing Portfolio</a>
+  
+                  <br><br>
+  
+                  <div class="icon" style="font-size: 38px;">
+                    <a href="https://www.facebook.com/JT.VAoperations" target="_blank">
+                      <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jtvaoperations/" target="_blank">
+                      <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jeny-toquero-jt2023" target="_blank">
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="mailto:jt.vaoperations@gmail.com">
+                      <i class="ri-mail-fill" target="_blank" title="Email to: jt.vaoperations@gmail.com"></i>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" id="html-icon">
+                      <i class="ri-html5-fill"></i>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" id="css-icon">
+                      <i class="ri-css3-fill"></i>
+                    </a>
+                  </div> <!-- End of icons -->
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End of col s12 m6: card panel for my info and icons -->
+
+
+
+          <div class="row"> <!-- Right side card panel containing my posterized image -->
+            <div class="col s12 m6">
+              <div class="card" id="magic-card">
+                <img src="img2.png" class="my posterize photo" width="350px" id="posterize">
+              </div>
+            </div>
+          </div>  <!-- End of card panel: my posterized photo -->
+        </div>
+      </div>
+    </main>
+  </div>  <!-- End of container-home -->
+  <br> <br> <br>
+  <hr>
+  </main>
+
+    
+    <!-- ABOUT -->
+<div class="container">
+    <section id="about">
+      <div class="about-container">
+        <div class="row">
+          <h2 class="center-align" style="font-weight: 700; color: gold;">About Me</h2> <!-- Center the heading -->
+  
+          <!-- Text Card Panel (left) About Me Text -->
+          <div class="col s12 m6">
+            <div class="card" style="height: 350px;" id="aboutme-text">
+              <div class="card-content center-align">
+                <br><br><br><br>
+                <p style="color: cyan;">My mission is to serve as your dedicated partner in achieving business excellence. I understand your daily challenges as a business owner and am committed to empowering your growth and success by guiding you through obstacles like time management and strategic marketing. This is the very essence and mission of my company - JT.VA operations.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Image Card Panel (right) About Me Logo -->
+          <div class="col s12 m6">
+            <div class="card" id="aboutme-logo">
+              <div class="card-image" id="logobox">
+                <img src="logo.png" alt="jtva logo" style="display: block; margin: 0 auto;" width="100%" height="350px" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End of section: ABOUT -->
+  </div> <!-- End of container: ABOUT -->
+  <br><br><br><br>
+  <hr>
+
+
+
+
+    
+<!-- First Parallax Image -->
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="https://www.wallpapertip.com/wmimgs/83-838333_web-developer-wallpaper-hd.jpg" width="50%">
+  </div>
+  <!--    <div class="parallax"><img src="https://wallpapercave.com/wp/wp1904057.png" width="50%"></div> -->
+</div>
+
+
+<!-- My SERVICES -->
+<div class="container">
+  <section id="services">
+    <div class="services-container">
+      <div class="row">
+        <h2 class="center-align" style="font-weight: 700; color: gold;">My Services</h2> <!-- Center the heading -->
+        <br><br><br><br><br>
+
+        <!-- Service Card 1 -->
+        <div class="col s12 m4">
+          <div class="container-image">
+            <div class="card service-card">
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="web design photo">
+              </div>
+              <div class="content">
+                <h4 class="center-align" style="font-weight: 200; color: teal;">Web Development</h4>
+                <p style="color: black;">Crafting captivating websites that not only look stunning but also function flawlessly, delivering a seamless user experience to showcase your brand.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of Service 1 -->
+
+        <!-- Service Card 2 -->
+        <div class="col s12 m4">
+          <div class="container-image">
+            <div class="card service-card">
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+              </div>
+              <div class="content">
+                <h4 class="center-align" style="font-weight: 200; color: teal;">Digital Marketing</h4>
+                <p style="color: black;">Digital marketers can leverage online strategies to boost a company's online presence, ultimately increasing sales and revenue.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of Service 2 -->
+
+        <!-- Service Card 3 -->
+        <div class="col s12 m4">
+          <div class="container-image">
+            <div class="card service-card">
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="web design photo">
+              </div>
+              <div class="content">
+                <h4 class="center-align" style="font-weight: 200; color: teal;">Virtual Assistance Services</h4>
+                <p style="color: black;">Virtual assistants offer cost-effective support, enabling businesses to scale efficiently and improve overall productivity.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of Service 3 -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<br><br><br>
+<div class="row">
+  <div class="buttons-container">
+    <a href="#cwd" target="_blank" class="btn btn--contact" id="btn1">Web Design Project</a>
+    <a href="https://mailchi.mp/edd1445e1497/7j0cd3ng9j" target="_blank" class="btn btn--contact" id="btn2">Digital Marketing Portfolio</a>
+  </div>
+</div>
+
+
+                <!-- CWD projects-->
+                
+<div class="container">
+    <section id="cwd">
+       <div class="cwd-container">
+           <div class="row">
+               <h2 class="center-align" style="font-weight: 700; color: gold;">Web Design Projects</h2> <!-- Center the heading -->
+               <br><br><br>
+                <div class="col s12 m4">
+                    <div class="container-image">
+                        <div class="card service-card" style="background-color:gold;">
+                            <div class="card-image">
+                               
+                                <img src="cocktail web content/jen6.png" onmouseover="this.style.transform = 'scale(1.5)'" 
+                                onmouseout="this.style.transform = 'scale(1)'">
+                            </div>
+                            <div class="content">
+                                <h4 style="font-weight: 200; color: teal;">Beverage Website</h4>
+                                <p style="color: black;"> A responsive website made to showcase the application of the learnings acquired during the Creative Web Development Training</p>
+                                <br>
+                                <div class="buttons-container" style="center-align;">
+                                    <a href="BeverageWebsite.html" target="_blank" class="btn btn--contact" id="btn5">Visit the website</a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Project 1-->
+                
+                <div class="col s12 m4">
+                    <div class="container-image" >
+                        <div class="card service-card" style="background-color:gold;">
+                            <div class="card-image">
+                                <iframe class="responsive-video" src="https://www.youtube.com/embed/QX8_Rnd_inU" title="Grid" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class ="content">
+                                <h4 style="font-weight: 200; color: teal;">Grid and Scrollspy</h4>
+                                <p style="color: black;">Show importance of using grid system  when creating a website.And show also we can embed <span style="color:red;font-size: 15px;font-weight: 700;">video</span> and make it responsive according to the frame size.</p>
+                                <div class="buttons-container" style="center-align;">
+                                    <a href="Grid-and-scrollspy.html" target="_blank" class="btn btn--contact" id="btn5">View the webpage</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Project 2-->
+
+                <div class="col s12 m4">
+                    <div class="container-image">
+                        <div class="card service-card" style="background-color:gold;">
+                            <div class="card-image">
+                                <img src="cocktail web content/buttons.png" alt="web design photo" class="materialboxed">
+                            </div>
+                            <div class="content">
+                                <h4 style="font-weight: 200; color: teal;">Buttons</h4>
+                                <p style="color: black;">Show different style of buttons</p>
+                                <div class="buttons-container" style="center-align;">
+                                    <a href="buttons.html" target="_blank" class="btn btn--contact" id="btn5">View the webpage</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Project 3-->
+               </div><!-- end of row-->
+           </div>
+    </section>  <!-- End of section:Services-->
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="https://wallpapercave.com/wp/wp6350659.jpg" width="50%"></div>
+     <!-- <div class="parallax"><img src="https://wallpaperaccess.com/full/1109805.jpg" width="50%"></div>-->
+</div>
+ <br><br><br><br>
+ <hr>
+</div>
+
+ <!--  Contact ME Section --> 
+            
+ <section id="contact">
+      <h1 class="center-align"  style="font-weight: 700; color: gold;">Contact Me</h1> <!-- Center the heading -->
+      
+      <br><br><br><br>
+ <!--  Send Message Section --> 
+ <div class="col s12 m6">
+      <div class="contact-wrapper">  
+        <div class="contactForm">
+            <form action="mailto:emailid@example.com" method="post" enctype="text/plain">
+                <h2 style="font-weight: 400; color: cyan;">Send Message</h2>
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                <div class="inputBox">
+                    <textarea class="form-control" rows="10" placeholder="Your message" required></textarea>
+                </div>
+                <div class="send">
+                    <div class="custom-button" type="submit" value="SEND">
+                        <span class="button-overlay"></span>
+                        <span class="send-text">SEND</span>
+                    </div>
+                </div>
+            </form>
+        </div>       
+    <!-- Right contact page --> 
+        <div class="col s12 m6">
+            <div class="contactInfo">
+                <div class="iconC">
+                    <i class="ri-map-pin-fill"> Location<h5 style="font-weight: 400; color: cyan;"> Taytay, Rizal</h5></i>
+                </div>
+                <div class "iconC">
+                    <i class="ri-phone-fill"> Phone:<h5 style="font-weight: 400; color: cyan;">+63956-123-4567</h5></i>
+                </div>
+                <div class="iconC">
+                    <i class="ri-mail-fill"> Email:<h5 style="font-weight: 400; color: cyan;"> jt.vaoperations@gmail.com</h5></i>
+                </div>
+                <hr>
+                <div class="social-media-list">
+                    <a href="https://github.com/jenytoquero" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://codepen.io/" target="_blank"><i class="ri-codepen-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/jeny-toquero-jt2023" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://www.facebook.com/JT.VAoperations" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+                </div>
+                <hr>
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            </div>
+        </div>
+    </div>
+</section>
+</div> <!-- End of container - margin -->

@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Young Serif;
+    object-fit: scale-down;
+    font-size: 14px;
+    color: rgb(93, 232, 232);
+    
+}
+  /* Body Styles */
+  body {
+        placed-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+}
+
+hr {
+    border: 0; 
+    border-top: 3px solid yellow;
+    margin: 20px 0; 
+}
+
+
+#navbar a,
+#slide-out a {
+    font-weight: 700;
+    margin: left 20px;
+    text-align: center;
+    color:gold;
+    transition: color 0.3s, background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
+#slide-out {
+    background-color: black;
+}
+.nav-wrapper #nav-mobile a:hover{
+    background-color: rgb(9, 131, 131);
+    border-radius: 40px;
+   
+}
+/* Add hover styles for side nav links */
+
+#slide-out a:hover {
+  color: cyan;
+  background-color: black;
+}
+#nav-mobile a:hover{
+    color: cyan;
+    background-color: black;
+  }
+
+#fab-content a:hover {
+  background-color: black;
+  color: gold;
+    }
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(black,rgb(0, 0, 0,0.445)), url(https://w.forfun.com/fetch/24/24ed7f36a6a87f71d23647be7492fdd5.jpeg) no-repeat center/ cover;
+    position: relative; 
+    display: flex;
+}
+#container-home {
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: transparent;
+    
+}
+
+   
+
+h1{
+    animation: flyIn 2.5s ease-in-out;
+}
+@keyframes flyIn {  /* Flyin ng H1 */
+    from {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+h2,h3, h5, #hometext,.headline {
+    text-align: center;
+    
+}
+
+#hometext {    /* Flyin ng Home text */
+    animation: flyInFromLeft 5s ease-in-out;
+}
+
+@keyframes flyInFromLeft {
+    from {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+ #about-content {
+    text-align: justify;
+    
+  
+    
+}.cta-button {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.cta-button span {
+    background-color: yellow;
+    color: black;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+/* ABOUT SECTION SLIDING IMAGES*/
+.img-container {
+    overflow: hidden;
+    width: 80%;
+}
+
+.wrapper {
+    display: flex;
+    animation: slide 20s linear infinite; /* Adjust the duration as needed */
+}
+
+.wrapper img {
+    min-width: 300px;
+     transition: transform 0.5s ease;
+}
+
+@keyframes slide {
+ 
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(0); /* Create an infinite loop */
+        }
+    }
+
+   /* Recommendation Section */
+.recommendation {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+#recom-text {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+}
+.buttons-container {  /* Cocktail or wine recomm buttons */
+    display: flex; /* Use a flex container to put buttons side by side */
+    justify-content: space-around; /* Add space between buttons */
+}
+/* COCKTAIL RECOM SECTION */
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+}
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background:linear-gradient(45deg,pink,lightgreen,blueviolet);
+    text-align: center;
+    padding: 20px 20px;
+}
+.container .box-container .box img {
+    height: 230px;
+}
+h4{
+    color:rgb(1, 34, 34) ;
+   
+}
+li {
+    color: rgb(5, 44, 44);
+}
+.container .box-container .box h4 {
+    padding: 10px 0;
+}
+.btn {  /* Cocktail Recipe button */
+    overflow: hidden;
+}
+
+
+ /* Cocktail Recipe Box card reveal Effect */ 
+ .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    text-align: center;
+    justify-content: center;
+    perspective: 1000px; 
+}
+
+.drink-card {
+        flex-direction: column;
+        display: flex;
+        opacity: 1;
+    visibility: visible;
+    backface-visibility: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#winebox:hover {
+    transform: rotateY(180deg);
+ }
+ 
+#winebox:hover .card1 {
+    transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+    display: none; /* Hide the cocktail  images */
+   }
+   #winebox:hover .card2 {
+       opacity: 1;
+       visibility: visible;
+       display: block; /* Show the cocktail recipe content */
+   }
+/*Wine Section*/
+#winebox2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+     perspective: 1000px; 
+     background: transparent;
+  }
+.card {
+position: relative;
+backface-visibility:hidden;
+transition:transform 0.5s ease;
+margin-right: 5px;
+height: 100%;
+background: transparent;
+box-shadow: none;
+}
+.card1 {
+    margin-bottom: 10px;
+    flex-direction: column;
+        display: flex;
+        opacity: 1;
+    visibility: visible;
+    backface-visibility: hidden;
+    align-items: center;
+    
+   
+}
+.card2 {
+    backface-visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transform:rotateY(180deg)
+}
+
+#winebox2:hover {
+   transform: rotateY(180deg);
+}
+.card2>p{
+    color:  rgb(5, 44, 44);
+}
+
+#winebox2:hover .card1 {
+ transform: rotateY(180deg);
+ opacity: 0;
+ visibility: hidden;
+ display: none; /* Hide the wine bottles images */
+}
+#winebox2:hover .card2 {
+    opacity: 1;
+    visibility: visible;
+    display: block; /* Show the wine info content */
+}
+
+#winebox2 h4 {
+    color: aqua;
+  }
+  #winebox2 p {
+    color: gold;
+  }
+  #winebox2 .btn {
+    color: black;
+  }
+/* Gallery Cocktail Carousel Section  */
+  .cocktail-carousel .carousel-item {
+    background:linear-gradient(45deg,pink,rgb(16, 21, 16),rgb(57, 187, 192));
+    padding: 10px; /* background ng bottles */
+    border-radius: 20px; /* Border radius for rounded corners */
+   
+}
+
+/* Style the images within the carousel items */
+.cocktail-carousel .carousel-item img {
+    max-width: 100%; /* fits image within the box */
+}
+/* shop wine section nav bar */
+.tabs {
+    display: flex; 
+    justify-content: space-between; 
+    padding-bottom: 50px;
+}
+
+.tab {
+    flex: 1; /* Make each list item take up an equal amount of space */
+}
+
+.wine-image {
+    transition: transform 0.3s; /* Add a transition for smooth scaling */
+}
+
+.wine-image:hover {
+    transform: scale(1.5); /* transform wine image when hover */
+}
+/* Newsletter Section  */
+
+.container .body_txt {  
+    flex-basis: 60%;  
+    padding: 10px;  
+    display: flex;  
+    justify-content: center;  
+    flex-direction: column;  
+  }  
+
+input {
+    border: 3px solid rgba(0, 0, 0, .12);
+}
+
+
+
+
+
+  @media screen and (max-width: 800px) {
+    #nav-mobile {
+        position: absolute;
+        right: 30px;
+   
+    }
+    #welcome {
+        font-size: 34px;
+    }
+   #hometext{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    h2, h3 {
+        font-size: 30px; 
+    }
+    .buttons-container, .btn, button3{
+        font-size: 10px;
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+    .box {
+        font-size: 10px;
+        height: auto;
+    }
+    .fixed-action-btn>#fab-content {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    
+    .cta-button, .btn, #button2, #button3 {
+        position: relative;
+        margin-top: 10px;
+    }
+    #newsletterp {
+        text-align: center;
+    }
+    
+    button#subscribe {
+        padding: 10px 30px;
+        text-align: center;
+        margin-left: 200px;
+    }
+    .buttons-container .cta-button #buy-btn{
+        padding:10px 30px;
+        
+        }
+        @media screen and (max-width: 375px) {
+        }

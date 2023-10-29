@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body style="background-color: rgb(207, 248, 248);"></body>
+    <!-- Materialiazecss Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <!-- Font awesome link-->
+    <script src="https://kit.fontawesome.com/9d8e337452.js" crossorigin="anonymous"></script>
+   <!-- Font awesome cdnjs 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link rel="stylesheet" href="style.css">
+ <!--  jquery cdn -->                     
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>          
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<!-- Initializations   FAB-->
+    <script>
+            $(document).ready(function(){
+                //FAB
+                $('.fixed-action-btn').floatingActionButton({
+    hoverEnabled: false,  // Disables hover effect
+    toolbarEnabled: true,  // Enables the toolbar
+    
+    });
+                
+
+     })
+
+    </script> 
+
+
+
+
+    <title>Buttons</title>
+</head>
+<body>
+    <h1 class="center red-text text-lighten-2">Buttons</h1>
+<div class="divider"></div>
+<div class="container">
+    <p>
+        There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.
+        </p>
+<!--Raised Buttons-->
+<h3 class="red-text text-align"> Raised</h3>
+<a href="" class="btn waves-effect waves-light blue">Button</a>
+<a href="" class="btn waves-effect waves-light green"><i class="material-icons left">cloud</i>button</a>
+<a href="" class="btn waves-effect waves-light cyan"><i class="material-icons right">cloud</i>button</a>
+    <i class="materialize"></i></a></i></a>
+    
+<!--Floating Buttons-->
+<h3 class="red-text text-align"> Floating</h3>
+<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        
+<h5 class="black-text">Floating Action Button</h5>
+<p>See the documentation on <a href="">this page</a></p>
+
+<!--Flat Buttons-->
+<h3 class="red-text text-align"> Flat</h3>
+<p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+<a class="waves-effect waves-teal btn-flat">Button</a>
+
+<!--Submit Buttons-->
+<h3 class="red-text text-align"> Submit Button</h3>
+<p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit.</p>
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+<!--Large Buttons-->
+<h3 class="red-text text-align"> Large Button</h3>
+<p>This button has a larger height for buttons that need more attention.</p>
+<a class="btn-large waves-effect waves-light btn-large red" >Button</a>
+<a class="btn-large waves-effect waves-light btn-large orange"><i class="material-icons left">cloud</i>button</a>
+<a class="btn-large waves-effect waves-light btn-large blue"><i class="material-icons right">cloud</i>button</a>
+
+<!--Small Buttons-->
+<h3 class="red-text text-align"> Small Button</h3>
+<p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+<a class="btn-small waves-effect waves-light btn-large fluorescent green" >Button</a>
+<a class="btn-small waves-effect waves-light btn-large neon purple"><i class="material-icons left">cloud</i>button</a>
+<a class="btn-small waves-effect waves-light btn-large lime"><i class="material-icons right">cloud</i>button</a>
+
+<!--Disabled Buttons-->
+<h3 class="red-text text-align"> Disabled</h3>
+<p>This style can be applied to all button types</p>
+<a class="btn-large disabled">Button</a>
+<a class="btn disabled">Button</a>
+<a class="btn-flat disabled">Button</a>
+<a class="btn-floating disabled"><i class="material-icons">add</i></a>
+
+<!--Floating Action Buttons 03/09/2023-->
+<h3 class="red-text text-align"> Floating Action Button: TOOLBAR </h3>
+<hr>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque iusto nulla laborum quisquam, repellendus commodi facere sit vitae, perspiciatis ratione, doloribus sunt assumenda dicta. Sapiente officiis aut perspiciatis maiores?</p>
+<div class="fixed-action-btn toolbar">
+     <a class="btn-floating btn-large red">
+       <i class="large material-icons">mode_edit</i>
+    </a><!--comment temporary disabled 
+    <ul>
+      <li>
+        <a class="btn-floating red">
+            <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul> 
+    <ul> 
+        <li>
+            <a class="btn-floating cyan" href="https://www.facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating blue darken-1" href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating green" href="https://www.linkedin.com">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating black" href="https://www.tiktok.com">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+        </ul> -->
+        <ul> 
+            <li>
+                <a class="blue" href="https://www.facebook.com">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a class="purple" href="https://www.instagram.com">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="green" href="https://www.linkedin.com">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a class="black" href="https://www.tiktok.com">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>  
+  </div> 
+
+
+<br><br><br><br>
+  <!--Test Floating Action Buttons Using SOCMED Links
+<h3 class="red-text text-align"> Test Floating Action Buttons Using SOCMED Links </h3>
+<hr>
+<p>Hi. I want to test the Floating Action button using social media links.</p>
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large yellow">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li>
+            <a class="btn-floating red" href="https://www.facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating blue darken-1" href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating green" href="https://www.linkedin.com">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a class="btn-floating black" href="https://www.tiktok.com">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+        </ul> </div> -->
+
+
+  <div style="height: 700px;"></div>
+</div>
+
+</body>
+</html>

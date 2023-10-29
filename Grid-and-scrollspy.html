@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SCRIPTS and CDJNS-->
+
+ <!-- Materialiazecss Icon -->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+ <!-- Font awesome link-->
+ <script src="https://kit.fontawesome.com/9d8e337452.js" crossorigin="anonymous"></script>
+<!-- Font awesome cdnjs-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+<!--  jquery cdn -->                     
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>          
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+
+
+        $('.document').ready(function() {
+            $('.scrollspy').scrollSpy();
+        });
+   
+</script>
+
+
+    <title>Grid</title>
+</head>
+<body>
+  <body background="https://images.hdqwalls.com/wallpapers/olup-blur-5k-bw.jpg" style="background-position: cover; "></body>
+
+            <!--Start Here-->
+        <div class="text-style">
+          <div class="grid-style">
+            <h1 style="color:red">Grid</h1>
+          </div>
+            <hr> <br><br>
+            <div class="container">
+                    <div class="row">
+                            <div class="col s9">
+                                <p style="color:white">We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+                                <h3 style="color:red">Container</h3>
+                                <p style="color:white">The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                                 <div class="flow-text">Demo</div>
+                                 <a href="" class="btn waes-effect waves-light" id="demo-btn">Turn Off Container</a><br>
+                                 <img src="D:/Jeny/WEB DEV/Activity/Images/grid ss.png" class="responsive-img"/>
+                                 <br><br>
+                                 <p>To add a container just put your content inside a <'div'> tag with a container class. Here's an example of how your page might be set up.</p>
+                                 <br><br>
+
+                                 <!-- Introduction and 12 columns -->
+                                 <h3 id="Introduction" class="section scrollspy">Introduction</h3> 
+                                 <p>Take a look at this section to quickly understand how the grid works!</p>                        
+                                 <div class="flow-text">12 Columns</div>
+                                 <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+                                 <br>
+                                <div class="row">
+                                        <div class="col s12 m4 l6 card-panel red white-text">
+                                             <p class="center">1</p>
+                                        </div>
+                                        <div class="col s12 m4 l6 card panel navy white-text">
+                                            <p class="center">2</p>
+                                        </div>
+                                        <div class="col s12 m4 l6 card panel blue white-text">
+                                            <p class="center">3</p>
+                                       </div>
+                                       <div class="col s12 m4 l6 card panel deep-orange accent-1 white-text">
+                                           <p class="center">4</p>
+                                       </div>
+                                       <div class="col s12 m4 l6 card panel orange white-text">
+                                             <p class="center">5</p>
+                                        </div>
+                                        <div class="col s12 m4 l6 card panel teal white-text">
+                                            <p class="center">6</p>
+                                        </div>
+                                        <div class="col s12 m4 l6 card panel navy accent-3 white-text">
+                                            <p class="center">7</p>
+                                       </div>
+                                       <div class="col s12 m4 l6 card panel blue lighten-4 white-text">
+                                           <p class="center">8</p></div>
+                                           <div class="col s12 m4 l6 card panel  light-navy darken-4 white-text">
+                                            <p class="center">9</p>
+                                       </div>
+                                       <div class="col s12 m4 l6 card panel #ff6f00 amber darken-4 white text">
+                                           <p class="center">10</p>
+                                       </div>
+                                       <div class="col s12 m4 l6 card panel grey darken-2 white-text">
+                                           <p class="center">11</p>
+                                      </div>
+                                      <div class="col s12 m4 l6 card panel black white-text">
+                                          <p class="center">12</p>    
+                                       </div>
+                                </div>  <!--end of  row-->
+
+                                <!-- Initialization and scrollspy -->
+                                <h3 id="Initialization" class="section scrollspy">Initialization</h3> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque aspernatur sit aut cumque officiis delectus nihil sunt dolor ducimus tempore, animi praesentium? Dignissimos nihil nisi pariatur nam accusamus. Necessitatibus.</p>
+                                 <br>
+
+                                 <!-- Options -->
+                                 <h3 id="options" class="section scrollspy">Options</h3> 
+                                   <table class="striped">
+                                        <thead>
+                                          <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Default</th>
+                                            <th>Description</th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                        <tr>
+                                          <td>throttle</td>
+                                          <td>Number</td>
+                                          <td>100</td>
+                                          <td>Throttle of scroll handler.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>scrollOffset</td>
+                                          <td>Number</td>
+                                          <td>200</td>
+                                          <td>Offset for centering element when scrolled to.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>activeClass</td>
+                                          <td>String</td>
+                                          <td>'active'</td>
+                                          <td>Class applied to active elements.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>getActiveElement</td>
+                                            <td>Function</td>
+                                            <pre><td>          </td></pre>
+                                            <td>Used to find active element.</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <br>
+                                  <div class="flow-text">getActiveElement</div>
+                                 <p>TThis is the default function used for finding the active element where id is the id of the scrollspy element. It returns a CSS selector of the element you want marked active.</p>
+                                  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                                  <!-- Method -->
+                                  <h3 id="method" class="section scrollspy">Methods</h3>
+                                  <blockquote>
+                                  <p>Because jQuery is no longer a dependency, all the methods are called on the plugin instance. You can get the plugin instance like this:.</p>
+                                  <pre>
+      <span-1>var</span-1> instance = M.ScrollSpy.<span>getInstance</span>(elem);
+
+     <span-1>/* jQuery Method Calls
+     You can still use the old jQuery plugin method calls.
+    But you won't be able to access instance properties.
+                                  
+    $('.scrollspy').scrollSpy('methodName');
+     */</span-1>
+
+
+                                </pre> </blockquote>  
+                                <div class="flow-text">.destroy()</span>;</div>
+                                <p>Destroy plugin instance and teardown.</p>
+                                <p>
+                                <pre>instance<span>.destroy();</p></pre>
+                                 <br>  
+
+                                 <!-- Properties -->
+                                 <div  id="properties">                   
+                                 <h3 >Properties</h3>
+                                 <table class="striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td>el</td>
+                                          <td>Element</td>
+                                          <td>The DOM element the plugin was initialized with.</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>options</td>
+                                            <td>Object</td>
+                                            <td>The options the instance was initialized with.</td>
+                                          </tr>
+                                      </tbody>
+
+                                 </table>
+                                  <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                                    
+                                  <h3 style="color:black"><i>Made by J.TOQUERO, CWD BATCH 9</i></h3>
+                                </div>
+                             </div>  <!--end of  col s9 -->
+                                 
+                            
+
+                             <div class="row">
+                              <div class="col s3 m3">
+                             <div class="scrollspy-container">
+                                <div class="col s3 adobe-stock">
+                                    <a href="https://stock.adobe.com/ph?clickref=1011lxQyo95g&mv=affiliate&mv2=pz&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign=buysellads" target="_blank">
+                                        <img src="images/grid ss2.png" class="responsive-img" width="600px" />
+                                    </a>
+                                    <div class="row">
+                                        <div class="col s3 m3">
+                                     <br>
+                                      <div class="scrollspy">
+                                      <div class="col s3 m3">
+                                        <ul class="section table-of-contents">
+                                            <li><a href="#Introduction" style="color:navy">Introduction</a></li>
+                                            <li><a href="#Initialization"style="color:navy">Initialization</a></li>
+                                            <li><a href="#options" style="color:navy">Options</a></li>
+                                            <li><a href="#method" style="color:navy">Methods</a></li>
+                                            <li><a href="#properties"style="color:navy">Properties</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                         <!--end of scrollspy container-->
+            </div>  <!--end of div class container-->
+        </div> <!--end of div class text-style-->
+
+        
+
+    <!-- *********** END here **********-->
+    <div style="height: 100px;"></div>
+    
+    
+   
+</body>
+</html>
