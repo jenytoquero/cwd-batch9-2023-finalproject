@@ -216,60 +216,33 @@ body {
 
 /* STYLING FOR MY SERVICES */
 /* White Border with radius */
-.container-image .service-card {
-    position: relative;
-    min-width: 300px; /* lapad ng white background border ng image */
-    height: 285px; /* height ng white background border ng image */
-    background-color: #fff;
-    margin: 30px 15px;
-    padding: 65px 15px 15px 10px;
 
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in-out;
-    border-radius: 0px 50px 0px 50px; /* Square tip on top left, 50px curve on top right and bottom left, no radius on bottom right */
+
+#panel1 {
+  border-radius: 0px 50px 0px 50px;
+  background-color: white;
+  height: 250px;
+  min-width: 300px;
+} 
+
+.card.service-card .content {
+  position: relative;
+  bottom: -100%;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
-.container-image .service-card:hover {
-    height: 450px; /* nag-eextend pababa pag nag hover */
+#panel1:hover {
+  height: 550px; /* white card panel goes down when hovering */
 }
 
-/* This controls the Image Size */
-.container-image .service-card .card-image {
-    position: relative;
-    top: -20%; /* Nagpapa-angat sa image */
-    height: 220px; /* Original size 260px */
-    left: 5px;
-    z-index: 1;
-}
-
-.container-image .service-card .card-image img {
-    max-width: 100%;
-    border-radius: 15px;
-  }
-
-
-.container-image .service-card .content {
-    position: relative;
-    top: -140px;
-    padding: 10px 15px;
-    color: #111;
-    text-align: center;
-    visibility: hidden; /* visible kita ung text */
-    opacity: 0;   /* value of 1 kita ung */
-    transition: 0.3s ease-in-out;
-}
-
-.content {
-    color: teal;
-}
-
-.container-image .service-card:hover .content {
-    margin-top: 70px; /* Nagbaba ng content-text once nag hover. */
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.2s;
+.card.service-card:hover .content {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
 }
 /* contact form styling sheet */
 
